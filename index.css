@@ -1,0 +1,254 @@
+html {
+    background-color: #6c6d74;
+    background-image: url('assets/brooke-lark-kXQ3J7_2fpc-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #555;
+}
+
+h1 {
+    text-align: center;
+    font-size: 180%;
+    line-height: 120%;
+    padding: 5% 0;
+}
+
+h2 {
+    text-decoration: underline;
+    line-height: 280%;
+    padding-left: 2%;
+}
+
+h3 {
+    line-height: 110%;
+    padding: 5% 0;
+}
+
+p {
+    padding: 1%;
+}
+
+img {
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+a {
+    max-width: 20%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+#logo {
+    margin: 0px;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-image: url() no-repeat center;
+}
+
+nav {
+    float: right;
+    max-width: 80%
+}
+
+#menu {
+    display: hidden;
+    width: 40px;
+    height: 40px;
+    background-image: url(images/menu.png) center;
+}
+
+a:hover#menu {
+    border-radius: 4px 4px 0 0;
+}
+
+ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    float: left;
+    padding: 10px;
+}
+
+.current {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+section {
+    width: 29%;
+    float: left;
+    margin: 2% 2%;
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+.dropbtn {
+    background-color: #21282c;
+    color: white;
+    padding: 16px 100px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #6e8594;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+#logo {
+    margin: 0px;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-image: url() no-repeat center;
+}
+
+header {
+    background-color: #09606a;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100%;
+    opacity: 80%;
+}
+
+.addbtn {
+    background-color: #21282c;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.addbtn:hover,
+.addbtn:focus {
+    background-color: #6e8594;
+}
+
+#dropbtn,
+#addbtn {
+    display: inline-block;
+}
+
+#owner {
+    color: #f0f0f0;
+    margin-bottom: 0px;
+    padding: 0%;
+    position: inherit;
+    bottom: 0;
+}
+
+#logo_img {
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+#main_cont {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+#last {
+    background-color: #09606a;
+    width: 100%;
+    height: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100%;
+    opacity: 80%;
+}
+
+input[type=submit] {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#search-group {
+    margin-bottom: 5px;
+    background: #8ebdc0;
+    height: 100%;
+    width: 100%;
+    border-style: solid;
+}
+
+#search-recipe {
+    flex: 4;
+    height: 100%;
+    background: #5d8b91;
+    border: none;
+    font-size: 20px;
+    color: white;
+    width: 90%;
+    border-style: ridge;
+}
+
+#search-icon {
+    height: 100%;
+    width: 20px;
+}
+
+#search-icon:hover {
+    cursor: pointer;
+}

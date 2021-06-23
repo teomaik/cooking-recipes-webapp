@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cooking Recipes</title>
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="manifest.webmanifest">
+    <script src="common.js" defer></script>
+    <link rel="shortcut icon" href="favico.png">
+
+    <link href="index.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header id="header_MSC">
+        <a id="logo"><img id="logo_img" src="assets/logo.png" /></a>
+    </header>
+
+    <main id="main_cont">
+        <div id="search-group">
+            <input id="search-recipe" maxlength="100" type="text" placeholder="Enter recipe name" />
+            <img id="search-icon" src="assets/search.png" alt="search">
+        </div>
+        <div class="btn-group">
+            <button class="dropbtn" id="dropbtn">Advance search</button>
+            <div id="myDropdown" class="dropdown-content">
+            </div>
+            <button class="addbtn" id="addpl_btn">Add Recipe</button>
+
+        </div>
+
+    </main>
+
+    <footer id="last">
+        <p id="owner">Maikantis Theodoros mai21033</p>
+    </footer>
+
+
+
+    <!-- Firebaseeeeeeeeeeeeeeeeeeeee -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <!-- TODO add these
+    <script src="./src/firebase-app.js"></script>
+    <script src="./src/firebase-database.js"></script>
+    -->
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyC7VjGbxVOxEhD13a7p_i0ix0Mtg_thyRY",
+            authDomain: "cooking-recipes-msc.firebaseapp.com",
+            projectId: "cooking-recipes-msc",
+            storageBucket: "cooking-recipes-msc.appspot.com",
+            messagingSenderId: "1020587380025",
+            appId: "1:1020587380025:web:d6dd28e5bfc94e67f36ce8"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

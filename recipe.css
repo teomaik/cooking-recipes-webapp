@@ -1,0 +1,160 @@
+html {
+    background-color: #6c6d74;
+    background-image: url('assets/bernard-hermant-XFCei-F4mjg-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #555;
+}
+
+#logo {
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+#gotostart {
+    max-width: 20%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#gotostart:hover {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+nav {
+    float: right;
+    max-width: 80%
+}
+
+a:hover#menu {
+    border-radius: 4px 4px 0 0;
+}
+
+#logo {
+    margin: 0px;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-image: url() no-repeat center;
+}
+
+header {
+    background-color: #09606a;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100%;
+    opacity: 80%;
+}
+
+#owner {
+    color: #f0f0f0;
+    margin-bottom: 0px;
+    padding: 0%;
+    position: inherit;
+    bottom: 0;
+}
+
+#logo_img {
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+#main_cont {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+#last {
+    background-color: #09606a;
+    width: 100%;
+    height: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100%;
+    opacity: 80%;
+}
+
+
+/* Recipe page */
+
+#recipe-img {
+    grid-area: rimg;
+}
+
+#recipename {
+    grid-area: rname;
+}
+
+#recipename {
+    grid-area: recipetime;
+}
+
+#recipename {
+    grid-area: recipecalories;
+}
+
+#benefitsdiv {
+    border-style: ridge;
+    overflow-y: auto;
+    height: 100px;
+    resize: none;
+    grid-area: benefits;
+}
+
+#prosdiv {
+    border-style: inset;
+    overflow-y: auto;
+    height: 100px;
+    resize: none;
+    grid-area: pros;
+}
+
+#consdiv {
+    border-style: outset;
+    overflow-y: auto;
+    height: 100px;
+    resize: none;
+    grid-area: cons;
+}
+
+.health-benefits,
+.recipe-pros,
+.precipe-cons ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    float: left;
+    padding: 10px;
+}
+
+#rec-details {
+    margin: auto;
+    display: grid;
+    grid-template-areas: 'rname' 'recipetime' 'recipecalories';
+}
+
+.topdiv {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
