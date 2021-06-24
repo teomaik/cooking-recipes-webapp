@@ -29,20 +29,62 @@
 
     <main id="main_cont">
         <div class="container">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Player's first name..">
+            <label for="inrname">Recipe Name</label>
+            <input type="text" id="inrname" name="rname" placeholder="Recipe's name..">
 
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Player's last name..">
+            <label for="inrcal">Calories</label>
+            <input type="text" id="inrcal" name="rcal" placeholder="Recipe's caloric value..">
 
-            <label for="birth">Date of birth</label>
-            <input type="text" id="birth" name="birthdate" placeholder="Player's date of birth.. (day/month/year)">
+            <label for="inrtime">Required execurion time</label>
+            <input type="text" id="inrtime" name="rtime" placeholder="Recipe's execurion time.. (in minutes)">
 
-            <label for="country">Nationality</label>
-            <input type="text" id="country" name="nationality" placeholder="Player's nationality..">
+            <div id="tablsss">
+                <div id="healthdiv">
+                    <table id="health_tb" class="table">
+                        <thead>
+                            <tr>
+                                <th>Health Benefits</th>
+                            </tr>
+                        </thead>
+                        <tbody id="health_tbody">
+                        </tbody>
+                    </table>
+                    <br>
+                    <button type="button" class="add_btn" id="health_btn">Add a Health benefit</button>
+                    <div class="seperator" id="seperatorhtl"></div>
+                </div>
 
-            <label for="hght">Height</label>
-            <input type="text" id="hght" name="height" placeholder="Player's height..">
+
+                <div id="prosdiv">
+                    <table id="pros_tb" class="table">
+                        <thead>
+                            <tr>
+                                <th>Dish Pros</th>
+                            </tr>
+                        </thead>
+                        <tbody id="pros_tbody">
+                        </tbody>
+                    </table>
+                    <br>
+                    <button type="button" class="add_btn" id="pros_btn">Add Positive</button>
+                    <div class="seperator"></div>
+                </div>
+
+
+                <div id="consdiv">
+                    <table id="cons_tb" class="table">
+                        <thead>
+                            <tr>
+                                <th>Dish Cons</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cons_tbody">
+                        </tbody>
+                    </table>
+                    <br>
+                    <button type="button" class="add_btn" id="cons_btn">Add a Negative</button>
+                </div>
+            </div>
 
             <button id="addplbt">Add</button>
         </div>
@@ -80,7 +122,7 @@
         firebase.initializeApp(firebaseConfig);
     </script>
 
-    <script src="index.js"></script>
+    <script src="src/add_recipe.js"></script>
 </body>
 
 </html>

@@ -97,11 +97,21 @@ img {
 }
 
 #main_cont {
+    max-height: 75%;
+    width: 80%;
     position: fixed;
     top: 50%;
     left: 50%;
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
+}
+
+.seperator {
+    margin: 3% 0;
+    height: 7px;
+    width: 100%;
+    background-color: #09606a;
+    visibility: hidden;
 }
 
 
@@ -137,4 +147,104 @@ textarea {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+    overflow: auto;
+    max-height: 80%;
+}
+
+
+/* tables */
+
+td,
+th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #487277;
+    color: white;
+}
+
+.table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.table td {
+    width: 100%;
+}
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table thead th {
+    text-align: center;
+    width: auto;
+}
+
+.add_btn {
+    background-color: #6e8594;
+    color: white;
+    padding: 8px;
+    font-size: 0.8vw;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+.add_btn:hover {
+    background-color: #6e8594c2;
+}
+
+#healthdiv {
+    grid-area: htl;
+}
+
+#prosdiv {
+    grid-area: pr;
+}
+
+#consdiv {
+    grid-area: cn;
+}
+
+#tablsss {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas: 'htl pr cn'
+}
+
+@media all and (max-width: 1000px) {
+    #seperatorhtl {
+        visibility: visible;
+    }
+    #tablsss {
+        grid-template-areas: 'htl htl' 'pr cn'
+    }
+}
+
+@media all and (max-width: 600px) {
+    .seperator {
+        visibility: visible;
+    }
+    #tablsss {
+        grid-template-areas: 'htl' 'pr' 'cn'
+    }
 }
