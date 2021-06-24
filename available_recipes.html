@@ -12,28 +12,43 @@
     <script src="common.js" defer></script>
     <link rel="shortcut icon" href="favico.png">
 
-    <link href="index.css" rel="stylesheet">
+    <link href="available_recipes.css" rel="stylesheet">
 
 </head>
 
 <body>
     <header id="header_MSC">
         <a id="logo"><img id="logo_img" src="assets/logo.png" /></a>
+        <nav id="navigation">
+            <a href="#" id="menu"></a>
+            <ul>
+                <li><a id="gotostart" href="index.html" class="current">Start menu</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main id="main_cont">
-        <div id="search-group">
-            <input id="search-recipe" maxlength="100" type="text" placeholder="Enter recipe name" />
-            <img id="search-icon" src="assets/search.png" alt="search">
+        <div class="container">
+            <h3 id="misc-search">Results for: </h3>
+            <h3 id="recipe-search">recipe that was searched</h3>
+            <ul>
+                <li>
+                    <p class="benefit">Recipe 2</p>
+                </li>
+                <li>
+                    <p class="benefit">Recipe 2</p>
+                </li>
+                <li>
+                    <p class="benefit">Recipe 3</p>
+                </li>
+                <li>
+                    <p class="benefit">Recipe 4</p>
+                </li>
+                <li>
+                    <p class="benefit">Recipe 5</p>
+                </li>
+            </ul>
         </div>
-        <div class="btn-group">
-            <button class="dropbtn" id="dropbtn">Advance search</button>
-            <div id="myDropdown" class="dropdown-content">
-            </div>
-            <button class="addbtn" id="addpl_btn">Add Recipe</button>
-
-        </div>
-
     </main>
 
     <footer id="last">

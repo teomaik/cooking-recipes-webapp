@@ -165,6 +165,11 @@ nav ul li {
     grid-template-areas: 'rimg rname rname' 'rimg rtime pros' 'rimg rcal pros' 'rimg benefits cons' 'rimg benefits cons'
 }
 
+.div-title {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
 @media all and (max-width: 1000px) {
     .topdiv {
         grid-template-areas: 'rimg rname' 'rimg rtime' 'rimg rcal' 'rimg benefits' 'rimg benefits' 'pros cons'
