@@ -74,11 +74,8 @@ header {
 }
 
 #main_cont {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    /* bring your own prefixes */
-    transform: translate(-50%, -50%);
+    overflow-y: auto;
+    max-height: 80%;
 }
 
 #last {
@@ -92,10 +89,18 @@ header {
     opacity: 80%;
 }
 
+img {
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
 
 /* Recipe page */
 
 #recipe-img {
+    padding: 10px;
     grid-area: rimg;
 }
 
@@ -103,42 +108,43 @@ header {
     grid-area: rname;
 }
 
-#recipename {
-    grid-area: recipetime;
+#recipetime {
+    grid-area: rtime;
 }
 
-#recipename {
-    grid-area: recipecalories;
+#recipecalories {
+    grid-area: rcal;
 }
 
 #benefitsdiv {
-    border-style: ridge;
-    overflow-y: auto;
     height: 100px;
     resize: none;
     grid-area: benefits;
 }
 
 #prosdiv {
-    border-style: inset;
-    overflow-y: auto;
     height: 100px;
     resize: none;
     grid-area: pros;
 }
 
 #consdiv {
-    border-style: outset;
-    overflow-y: auto;
     height: 100px;
     resize: none;
     grid-area: cons;
 }
 
-.health-benefits,
-.recipe-pros,
-.precipe-cons ul {
+.recipe-facts {
     list-style: none;
+}
+
+.factsdiv {
+    border-style: ridge;
+    overflow-y: auto;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
 }
 
 nav ul li {
@@ -147,14 +153,56 @@ nav ul li {
     padding: 10px;
 }
 
-#rec-details {
-    margin: auto;
-    display: grid;
-    grid-template-areas: 'rname' 'recipetime' 'recipecalories';
-}
-
 .topdiv {
+    margin: auto;
+    margin-top: 110px;
+    width: 95%;
+    grid-gap: 5px;
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+    display: grid;
+    grid-template-areas: 'rimg rname rname' 'rimg rtime pros' 'rimg rcal pros' 'rimg benefits cons' 'rimg benefits cons'
+}
+
+@media all and (max-width: 1000px) {
+    .topdiv {
+        grid-template-areas: 'rimg rname' 'rimg rtime' 'rimg rcal' 'rimg benefits' 'rimg benefits' 'pros cons'
+    }
+}
+
+@media all and (max-width: 600px) {
+    .topdiv {
+        grid-template-areas: 'rimg' 'rname' 'rtime' 'rcal' 'benefits' 'pros' 'cons'
+    }
+}
+
+
+/* Recipe execution */
+
+.ingreds {
+    grid-area: ingrs;
+}
+
+.steps {
+    grid-area: stps;
+}
+
+.steps ul {
+    list-style: decimal;
+}
+
+#execution {
+    overflow-y: auto;
+    max-height: 80%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 95%;
+    grid-gap: 5px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: grid;
+    grid-template-areas: 'ingrs stps';
 }
