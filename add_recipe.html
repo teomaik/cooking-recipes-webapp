@@ -38,7 +38,38 @@
             <label for="inrtime">Required execurion time</label>
             <input type="text" id="inrtime" name="rtime" placeholder="Recipe's execurion time.. (in minutes)">
 
-            <div id="tablsss">
+            <div id="infoTbs">
+                <div id="ingrdiv">
+                    <table id="ingrds_tb" class="table">
+                        <thead>
+                            <tr>
+                                <th>Ingredients</th>
+                            </tr>
+                        </thead>
+                        <tbody id="ingrds_tbody">
+                        </tbody>
+                    </table>
+                    <br>
+                    <button type="button" class="add_btn" id="ingrds_btn">Add Igredient</button>
+                    <div class="seperator"></div>
+                </div>
+                <div id="procdiv">
+                    <table id="proc_tb" class="table">
+                        <thead>
+                            <tr>
+                                <th>Steps</th>
+                            </tr>
+                        </thead>
+                        <tbody id="proc_tbody">
+                        </tbody>
+                    </table>
+                    <br>
+                    <button type="button" class="add_btn" id="proc_btn">Add Cooking Step</button>
+                    <div class="seperator"></div>
+                </div> 
+            </div>
+
+            <div id="factTbs">               
                 <div id="healthdiv">
                     <table id="health_tb" class="table">
                         <thead>
