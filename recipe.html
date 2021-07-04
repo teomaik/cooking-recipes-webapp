@@ -37,21 +37,6 @@
                 <h3 class="div-title">Health benefits</h3>
                 <div class="factsdiv">
                     <ul id="rec-bens" class="recipe-facts">
-                        <li>
-                            <p class="benefit">Health benefit 1</p>
-                        </li>
-                        <li>
-                            <p class="benefit">Health benefit 2</p>
-                        </li>
-                        <li>
-                            <p class="benefit">Health benefit 3</p>
-                        </li>
-                        <li>
-                            <p class="benefit">Health benefit 4</p>
-                        </li>
-                        <li>
-                            <p class="benefit">Health benefit 5</p>
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -59,15 +44,6 @@
                 <h3 class="div-title">Pros</h3>
                 <div class="factsdiv">
                     <ul id="rec-pros" class="recipe-facts">
-                        <li>
-                            <p class="pro">Recipe pro 1</p>
-                        </li>
-                        <li>
-                            <p class="pro">Recipe pro 2</p>
-                        </li>
-                        <li>
-                            <p class="pro">Recipe pro 3</p>
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -75,15 +51,6 @@
                 <h3 class="div-title">Cons</h3>
                 <div class="factsdiv">
                     <ul id="rec-cons" class="recipe-facts">
-                        <li>
-                            <p class="benefit">Recipe con 1</p>
-                        </li>
-                        <li>
-                            <p class="benefit">Recipe con 2</p>
-                        </li>
-                        <li>
-                            <p class="benefit">Recipe con 3</p>
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -93,42 +60,12 @@
     <main id="execution">
         <div class="ingreds">
             <h3>Ingredients</h3>
-            <ul>
-                <li>
-                    <p class="benefit">Ingridient 1</p>
-                </li>
-                <li>
-                    <p class="benefit">Ingredient 2</p>
-                </li>
-                <li>
-                    <p class="benefit">Ingredient 3</p>
-                </li>
-                <li>
-                    <p class="benefit">Ingredient 4</p>
-                </li>
-                <li>
-                    <p class="benefit">Ingredient 5</p>
-                </li>
+            <ul id="rec-ingrs">
             </ul>
         </div>
         <div class="steps">
             <h3>Recipe execution</h3>
-            <ul>
-                <li>
-                    <p class="benefit">Cook step 1</p>
-                </li>
-                <li>
-                    <p class="benefit">Cook step 2</p>
-                </li>
-                <li>
-                    <p class="benefit">Cook step 3</p>
-                </li>
-                <li>
-                    <p class="benefit">Cook step 4</p>
-                </li>
-                <li>
-                    <p class="benefit">Cook step 5</p>
-                </li>
+            <ul id="rec-steps">
             </ul>
         </div>
     </main>
@@ -156,6 +93,7 @@
         var firebaseConfig = {
             apiKey: "AIzaSyC7VjGbxVOxEhD13a7p_i0ix0Mtg_thyRY",
             authDomain: "cooking-recipes-msc.firebaseapp.com",
+            databaseURL: "https://cooking-recipes-msc-default-rtdb.europe-west1.firebasedatabase.app",
             projectId: "cooking-recipes-msc",
             storageBucket: "cooking-recipes-msc.appspot.com",
             messagingSenderId: "1020587380025",
@@ -163,9 +101,10 @@
         };
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
+        const db = firebase.database();
     </script>
 
-    <script src="index.js"></script>
+    <script src="src/recipe.js"></script>
 </body>
 
 </html>

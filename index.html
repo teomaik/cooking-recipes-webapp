@@ -27,10 +27,8 @@
             <img id="search-icon" src="assets/search.png" alt="search">
         </div>
         <div class="btn-group">
-            <button class="dropbtn" id="dropbtn">Advance search</button>
-            <div id="myDropdown" class="dropdown-content">
-            </div>
-            <button class="addbtn" id="addpl_btn">Add Recipe</button>
+            <button class="advbtn" id="adv_btn">See all</button>
+            <button class="addbtn" id="add_btn">Add Recipe</button>
 
         </div>
 
@@ -66,9 +64,10 @@
         };
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
+        const db = firebase.database();
     </script>
 
-    <script src="index.js"></script>
+    <script src="src/index.js"></script>
 </body>
 
 </html>

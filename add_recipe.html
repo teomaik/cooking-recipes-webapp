@@ -66,10 +66,10 @@
                     <br>
                     <button type="button" class="add_btn" id="proc_btn">Add Cooking Step</button>
                     <div class="seperator"></div>
-                </div> 
+                </div>
             </div>
 
-            <div id="factTbs">               
+            <div id="factTbs">
                 <div id="healthdiv">
                     <table id="health_tb" class="table">
                         <thead>
@@ -151,6 +151,7 @@
         };
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
+        const db = firebase.database();
     </script>
 
     <script src="src/add_recipe.js"></script>
