@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="manifest" href="manifest.webmanifest">
-    <script src="common.js" defer></script>
     <link rel="shortcut icon" href="favico.png">
 
     <link href="advanced_search.css" rel="stylesheet">
@@ -19,6 +18,12 @@
 <body>
     <header id="header_MSC">
         <a id="logo"><img id="logo_img" src="assets/logo.png" /></a>
+        <nav id="navigation">
+            <a href="#" id="menu"></a>
+            <ul>
+                <li><a id="gotostart" href="index.html" class="current">Start menu</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main id="main_cont">
@@ -60,8 +65,8 @@
 
     <!-- Firebaseeeeeeeeeeeeeeeeeeeee -->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="./src/firebase-app.js"></script>
+    <script src="./src/firebase-database.js"></script>
     <!-- TODO add these
     <script src="./src/firebase-app.js"></script>
     <script src="./src/firebase-database.js"></script>

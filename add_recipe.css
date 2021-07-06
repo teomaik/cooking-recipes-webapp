@@ -24,6 +24,7 @@ body {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    margin-right: 15px;
 }
 
 #gotostart:hover {
@@ -96,7 +97,6 @@ img {
     width: auto;
 }
 
-
 #main_cont {
     max-height: 75%;
     width: 80%;
@@ -105,7 +105,6 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
 
 .seperator {
     margin: 3% 0;
@@ -225,9 +224,11 @@ table {
 #consdiv {
     grid-area: cn;
 }
+
 #ingrdiv {
     grid-area: ing;
 }
+
 #procdiv {
     grid-area: stp;
 }
@@ -244,8 +245,9 @@ table {
     grid-template-areas: 'htl pr cn'
 }
 
-header, footer{
-    z-index:100;
+header,
+footer {
+    z-index: 100;
 }
 
 @media all and (max-width: 1000px) {

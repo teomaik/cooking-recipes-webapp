@@ -28,7 +28,7 @@ function loadRecipeData(data) {
     var recipe = data.val();
 
     document.getElementById("recipename").innerHTML = recipe.name;
-    document.getElementById("recipetime").innerHTML = recipe.timerequired + " to cook";
+    document.getElementById("recipetime").innerHTML = recipe.timerequired + " minutes to cook";
     document.getElementById("recipecalories").innerHTML = recipe.caloricvalue + " calories";
 
     /*

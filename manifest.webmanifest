@@ -1,0 +1,28 @@
+{
+    "short_name": "Cooking Recipes",
+    "name": "Recipes",
+    "description": "MSC assignment for a web development course",
+
+    "start_url": "/cooking-recipes-webapp/",
+    "scope": "/cooking-recipes-webapp/",
+
+    "background_color": "white",
+    "display": "standalone",
+
+    "icons": [{
+            "src": "assets/96.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "assets/192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "assets/512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}

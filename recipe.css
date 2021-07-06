@@ -24,6 +24,7 @@ body {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    margin-left: 15px;
 }
 
 #gotostart:hover {
