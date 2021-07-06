@@ -18,13 +18,6 @@ function showRecipe(recKey, recipes) {
     var tag = document.createElement("a");
     var pp = document.createElement("p");
 
-    console.log(recKey);
-    console.log(recKey);
-    console.log(recKey);
-    console.log(recKey);
-    console.log(recipes);
-    console.log(availableRecipes);
-
     var text = document.createTextNode(recipes[recKey].name);
     tag.appendChild(text);
 
