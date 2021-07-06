@@ -1,5 +1,3 @@
-localStorage["recipeName"] = "spaghetti";
-
 window.onload = function() {
     //alert('Page is loaded');
     showRecipe();
@@ -12,7 +10,7 @@ function showRecipe() {
     //if (window.location.href.includes('name=')) {
     //    playerName = window.location.href.split('name=')[1].replace(/%20/g, ' ');
     //}
-    recipeName = localStorage["recipeName"];
+    var recipeName = localStorage["recipeName"];
 
     if (recipeName == '' || recipeName == null) {
         alert("No Recipe selected, you can always add a new one throught the main page");
@@ -30,8 +28,8 @@ function loadRecipeData(data) {
     var recipe = data.val();
 
     document.getElementById("recipename").innerHTML = recipe.name;
-    document.getElementById("recipetime").innerHTML = recipe.timerequired;
-    document.getElementById("recipecalories").innerHTML = recipe.caloricvalue;
+    document.getElementById("recipetime").innerHTML = recipe.timerequired + " to cook";
+    document.getElementById("recipecalories").innerHTML = recipe.caloricvalue + " calories";
 
     /*
         var pros = Object.keys(recipe.pros);
@@ -64,7 +62,8 @@ function appendToList(ulId, dataTb) {
     for (var i = 0; i < keys.length; i++) {
         var li = document.createElement('li');
         li.appendChild(document.createTextNode(dataTb[keys[i]]));
-        li.style.margin = '20px';
+        var pgwidth = document.body.clientWidth;
+        li.classList.add('txt');
         ul.appendChild(li);
     }
 }

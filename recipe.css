@@ -116,22 +116,41 @@ img {
     grid-area: rcal;
 }
 
+#infodiv {
+    margin-left: 10px;
+    display: grid;
+    grid-template-areas: 'rname' 'rtime' 'rcal';
+    grid-area: infodiv;
+}
+
 #benefitsdiv {
-    height: 100px;
     resize: none;
     grid-area: benefits;
 }
 
 #prosdiv {
-    height: 100px;
     resize: none;
     grid-area: pros;
 }
 
 #consdiv {
-    height: 100px;
     resize: none;
     grid-area: cons;
+}
+
+.tfds {
+    height: auto;
+}
+
+#benefitsdiv {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+}
+
+#consdiv {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .recipe-facts {
@@ -139,12 +158,30 @@ img {
 }
 
 .factsdiv {
-    border-style: ridge;
+    border: 2px solid #09606a;
+    border-radius: 15px;
+    border-top-left-radius: 0px;
     overflow-y: auto;
     height: 100%;
     width: 100%;
     padding: 0px;
     margin: 0px;
+    margin-left: 10px;
+}
+
+.div-title {
+    border: 2px solid #09606a;
+    border-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 30px;
+    color: white;
+    background-color: #09606a;
+    width: 200px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    margin-left: 10px;
 }
 
 nav ul li {
@@ -162,24 +199,7 @@ nav ul li {
     background-color: #f2f2f2;
     padding: 20px;
     display: grid;
-    grid-template-areas: 'rimg rname rname' 'rimg rtime pros' 'rimg rcal pros' 'rimg benefits cons' 'rimg benefits cons'
-}
-
-.div-title {
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-}
-
-@media all and (max-width: 1000px) {
-    .topdiv {
-        grid-template-areas: 'rimg rname' 'rimg rtime' 'rimg rcal' 'rimg benefits' 'rimg benefits' 'pros cons'
-    }
-}
-
-@media all and (max-width: 600px) {
-    .topdiv {
-        grid-template-areas: 'rimg' 'rname' 'rtime' 'rcal' 'benefits' 'pros' 'cons'
-    }
+    grid-template-areas: 'rimg infodiv pros' 'rimg benefits cons'
 }
 
 
@@ -210,4 +230,73 @@ nav ul li {
     padding: 20px;
     display: grid;
     grid-template-areas: 'ingrs stps';
+}
+
+.txt {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.execdiv {
+    border-left: 2px solid #09606a;
+    margin-left: 10px;
+}
+
+.txt {
+    font-weight: bold;
+    font-family: Papyrus, fantasy;
+    font-size: 1.3vw;
+}
+
+.foodnametxt {
+    font-size: 2vw;
+}
+
+@media all and (max-width: 1000px) {
+    .topdiv {
+        grid-template-areas: 'rimg infodiv' 'rimg benefits' 'pros cons'
+    }
+    #benefitsdiv {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 0px;
+    }
+    #prosdiv {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 20px;
+    }
+    .txt {
+        font-size: 2vw;
+    }
+    .foodnametxt {
+        font-size: 2.5vw;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .topdiv {
+        grid-template-areas: 'rimg' 'infodiv' 'benefits' 'pros' 'cons'
+    }
+    #prosdiv {
+        padding-top: 30px;
+        padding-right: 20px;
+    }
+    #consdiv {
+        padding-top: 30px;
+        padding-right: 20px;
+    }
+    #benefitsdiv {
+        padding-top: 30px;
+        padding-right: 20px;
+    }
+    #execution {
+        grid-template-areas: 'ingrs' 'stps';
+    }
+    .txt {
+        font-size: 3vw;
+    }
+    .foodnametxt {
+        font-size: 3.5vw;
+    }
 }

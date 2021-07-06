@@ -30,9 +30,11 @@
     <main id="main_cont">
         <div class="topdiv">
             <img id="recipe-img" src="test512.jpg" />
-            <h3 id="recipename">Food name</h3>
-            <p id="recipetime">time to cook</p>
-            <p id="recipecalories">caloric value</p>
+            <div id="infodiv">
+                <h3 id="recipename" class="txt foodnametxt">Food name</h3>
+                <p id="recipetime" class="txt">time to cook</p>
+                <p id="recipecalories" class="txt">caloric value</p>
+            </div>
             <div id="benefitsdiv" class="tfds">
                 <h3 class="div-title">Health benefits</h3>
                 <div class="factsdiv">
@@ -59,14 +61,18 @@
 
     <main id="execution">
         <div class="ingreds">
-            <h3>Ingredients</h3>
-            <ul id="rec-ingrs">
-            </ul>
+            <h3 class="div-title">Ingredients</h3>
+            <div class="execdiv">
+                <ul id="rec-ingrs">
+                </ul>
+            </div>
         </div>
         <div class="steps">
-            <h3>Recipe execution</h3>
-            <ul id="rec-steps">
-            </ul>
+            <h3 class="div-title">Recipe execution</h3>
+            <div class="execdiv">
+                <ul id="rec-steps">
+                </ul>
+            </div>
         </div>
     </main>
 
