@@ -257,6 +257,9 @@ footer {
     #factTbs {
         grid-template-areas: 'htl htl' 'pr cn'
     }
+    .add_btn {
+        font-size: 1.5vw;
+    }
 }
 
 @media all and (max-width: 600px) {
@@ -268,5 +271,8 @@ footer {
     }
     #factTbs {
         grid-template-areas: 'htl' 'pr' 'cn'
+    }
+    .add_btn {
+        font-size: 2vw;
     }
 }

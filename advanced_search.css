@@ -212,3 +212,15 @@ table {
 .add_btn:hover {
     background-color: #6e8594c2;
 }
+
+@media all and (max-width: 1000px) {
+    .add_btn {
+        font-size: 1.5vw;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .add_btn {
+        font-size: 2vw;
+    }
+}

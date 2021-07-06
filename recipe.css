@@ -165,6 +165,7 @@ img {
     overflow-y: auto;
     height: 100%;
     width: 100%;
+    max-height: 150px;
     padding: 0px;
     margin: 0px;
     margin-left: 10px;
