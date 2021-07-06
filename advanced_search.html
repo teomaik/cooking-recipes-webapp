@@ -12,7 +12,7 @@
     <script src="common.js" defer></script>
     <link rel="shortcut icon" href="favico.png">
 
-    <link href="index.css" rel="stylesheet">
+    <link href="advanced_search.css" rel="stylesheet">
 
 </head>
 
@@ -22,18 +22,34 @@
     </header>
 
     <main id="main_cont">
-        <div id="search-group">
-            <input id="search-recipe" maxlength="100" type="text" placeholder="Enter recipe name" />
-            <img id="search-icon" src="assets/search.png" alt="search">
-        </div>
-        <div class="btn-group">
-            <button class="dropbtn" id="dropbtn">Advance search</button>
-            <div id="myDropdown" class="dropdown-content">
+        <div class="container">
+
+            <button id="showAll" class="add_btn">ShowAll</button>
+            <br>
+
+            <label for="inrname">Recipe Name</label>
+            <input type="text" id="inrname" name="rname" placeholder="Recipe's name..">
+
+            <div id="infoTbs">
+                <div id="ingrdiv">
+                    <table id="ingrds_tb" class="table">
+                        <thead>
+                            <tr>
+                                <th>Ingredients</th>
+                            </tr>
+                        </thead>
+                        <tbody id="ingrds_tbody">
+                        </tbody>
+                    </table>
+                    <br>
+                    <button type="button" class="add_btn" id="ingrds_btn">Add Igredient</button>
+                    <div class="seperator"></div>
+                </div>
             </div>
-            <button class="addbtn" id="addpl_btn">Add Recipe</button>
 
+
+            <button id="addplbt">Search</button>
         </div>
-
     </main>
 
     <footer id="last">
@@ -70,7 +86,7 @@
         const db = firebase.database();
     </script>
 
-    <script src="advanced_search.js"></script>
+    <script src="src/advanced_search.js"></script>
 </body>
 
 </html>

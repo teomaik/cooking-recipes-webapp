@@ -106,7 +106,7 @@ function addRecipe(evn) {
     var healthBens = {};
     var pros = {};
     var cons = {};
-    var tags = {};
+    var tags = "";
 
     healthBens = getTbValues(document.getElementById("health_tbody").rows);
     pros = getTbValues(document.getElementById("pros_tbody").rows);
@@ -139,12 +139,10 @@ function addRecipe(evn) {
     }
 
     //adding tags to recipe. Tags are the words from the name and the ingredients
-    var tagIdx = 0;
     var tempTags = name.split(" ");
     for (var i = 0; i < tempTags.length; i++) {
         if (tempTags[i].length > 2) {
-            tags[tagIdx] = tempTags[i];
-            tagIdx++;
+            tags += " " + tempTags[i].toUpperCase();
         }
     }
     for (var i = 0; i < Object.keys(igredients).length; i++) {
@@ -152,8 +150,7 @@ function addRecipe(evn) {
         for (var k = 0; k < ingrTags.length; k++) {
             var tmpTag = ingrTags[k];
             if (tmpTag.length > 2) {
-                tags[tagIdx] = tmpTag;
-                tagIdx++;
+                tags += " " + tmpTag.toUpperCase();
             }
         }
     }
@@ -189,7 +186,11 @@ function done() {
 function getTbValues(tbrows) {
     var ret = {};
     for (var i = 0; i < tbrows.length; i++) {
-        ret[i] = tbrows[i].cells[0].innerHTML.replaceAll("<br>", "");
+        var cell = tbrows[i].cells[0].innerHTML.replaceAll("<br>", "");
+        if (isNullOrEmpty(cell)) {
+            continue;
+        }
+        ret[i] = cell;
     }
     return ret;
 }

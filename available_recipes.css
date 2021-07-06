@@ -105,7 +105,7 @@ img {
 
 #main_cont {
     margin: auto;
-    margin-top: 7%;
+    margin-top: 110px;
     margin-bottom: 3%;
     width: 95%;
     grid-gap: 5px;
@@ -121,20 +121,23 @@ img {
     list-style: none;
 }
 
-.container li {
+.li_rec {
     text-align: left;
     border-style: ridge;
+    border-radius: 5px;
+    background-color: #09606a;
     padding-left: 10px;
-    padding-right: 10px;
-    margin: 10px;
-    width: 90%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
 }
 
-#recipe-search {
-    text-decoration: underline;
-}
-
-#misc-search,
-#recipe-search {
-    display: inline-block;
+.av_rec {
+    font-weight: bold;
+    font-family: Papyrus, fantasy;
+    color: white;
+    text-align: center;
+    width: 100%;
 }
