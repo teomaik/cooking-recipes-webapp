@@ -81,10 +81,9 @@ function addRecipe(evn) {
     var time = document.getElementById("inrtime").value;
 
 
-    const regexnum = /^[+-]?\d+(\.\d+)?$/
-    const regexLetterSpace = /^[a-zA-Z\s]*$/;
+    const regexnum = /^[+-]?\d+$/;
 
-    if (isNullOrEmpty(name) || !name.match(regexLetterSpace)) {
+    if (isNullOrEmpty(name)) {
         document.getElementById("inrname").style.backgroundColor = 'darkred';
         emptyFields = true;
     }
