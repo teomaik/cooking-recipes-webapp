@@ -45,8 +45,8 @@ function editableCells(e) {
 function addTbRowToTB(etv, tbID, rowMsg) {
     var table = document.getElementById(tbID);
     var row = table.insertRow(table.rows.length);
+
     var cell1 = row.insertCell(0);
-    cell1.innerHTML = rowMsg;
 }
 //--------------
 

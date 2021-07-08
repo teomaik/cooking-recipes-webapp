@@ -209,6 +209,12 @@ table {
     transform: translate(-50%, -50%);
 }
 
+td{
+    height: 20px;
+    border: #6a7b86;
+    border-style:ridge  ;
+}
+
 .add_btn:hover {
     background-color: #6e8594c2;
 }

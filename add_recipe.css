@@ -250,6 +250,12 @@ footer {
     z-index: 100;
 }
 
+td{
+    height: 20px;
+    border: #6a7b86;
+    border-style:ridge  ;
+}
+
 @media all and (max-width: 1000px) {
     #seperatorhtl {
         visibility: visible;
